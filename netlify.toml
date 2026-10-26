@@ -1,0 +1,8 @@
+# Netlify serves this folder as-is. No build step.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
